@@ -1,0 +1,254 @@
+html {
+    width: 100%;
+}
+#toggle_button {
+    right: 0;
+    top: 0;
+}
+.custom_holder {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    border: 1px solid transparent;
+}
+
+/*Contact box*/
+#contact_box {
+     padding: 1% 2%;
+     float: right;
+     background-color: #B7232B;
+     position: absolute;
+     right: 0;
+     margin-left: -1px;
+     margin-bottom: -1px;
+     bottom: 0;
+ }
+#contact_box span {
+    display: block;
+}
+#span_mobile {
+    font-weight: 500 !important;
+}
+
+#content_div {
+    margin: auto;
+    margin-top: 2% !important;
+}
+
+/*Slogan*/
+#slogan_box{
+    /*font-size: 40px;*/
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    margin-top: 3%;
+    display: block;
+    margin-bottom: 2%;
+}
+#slogan {
+    display: block;
+    width: 100%;
+}
+
+/*Slogan btn-group*/
+.custom_button {
+    padding: 0.5rem;
+    color: white;
+}
+#btn_more {
+    background-color: #B7232B;
+    border: none;
+}
+#btn_projects {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+/*Mobile visibility*/
+.visible-mobile {
+    display: none;
+}
+
+/*Navbar and Banner*/
+#mobile_nav {
+    z-index: 1;
+    /*height: 0;*/
+    padding: 0;
+    width: 80%;
+    left: 20%;
+    top: 10%;
+    position: absolute;
+    background-color: transparent;
+}
+#banner {
+    z-index: 0;
+}
+
+nav ul li a {
+    color: white !important;
+}
+
+/*Large desktops.*/
+@media (min-width: 1612px) {
+    .nav-link {
+        font-size: 0.9rem;
+        margin-right: 1.75rem;
+        padding-right: 1.75rem !important;
+    }
+
+    .custom_button {
+        font-size: 0.8rem;
+    }
+
+    #slogan {
+        font-size: 50px;
+    }
+}
+@media (min-width: 1500px) and (max-width: 1611px){
+    .nav-link {
+        font-size: 0.6rem;
+        margin-right: 30px;
+    }
+
+    .custom_button {
+        font-size: 0.5rem;
+    }
+
+    #slogan {
+        font-size: 45px;
+    }
+}
+
+/*Medium desktops.*/
+@media (min-width: 1200px) and (max-width: 1499px){
+    .nav-link {
+        font-size: 0.6rem;
+        margin-right: 30px;
+    }
+
+    .custom_button {
+        font-size: 0.5rem;
+    }
+
+    #slogan {
+        font-size: 35px;
+    }
+}
+
+/*Small desktops.*/
+@media (min-width: 980px) and (max-width: 1199px) {
+    .nav-link {
+        font-size: 0.5rem;
+        margin-right: 25px;
+    }
+
+    .custom_button {
+        font-size: 0.5rem;
+    }
+
+    #slogan {
+        font-size: 30px;
+    }
+}
+
+/*Phone and tablet orientation.*/
+@media (min-width: 768px) and (max-width: 979px) {
+    .nav-link {
+        font-size: 0.5rem;
+    }
+
+    .custom_button {
+        font-size: 0.5rem;
+    }
+
+    #slogan {
+        font-size: 22px;
+    }
+
+    #contact_box span {
+        font-size: 0.5rem;
+    }
+
+    #contact_box #span_mobile {
+        font-size: 0.7rem;
+    }
+}
+
+/*Phone screen.*/
+@media (max-width: 767px) {
+    .nav-link {
+        font-size: xx-small;
+    }
+
+    .custom_button {
+        font-size: xx-small;
+    }
+
+    .hidden-phone {
+        visibility: collapse;
+    }
+
+    .visible-mobile {
+        display: block;
+    }
+
+    #contact_box span {
+        font-size: 0.4rem;
+    }
+
+    #span_mobile {
+        font-size: x-small !important;
+    }
+
+    #navbarcontent ul {
+        background-color: white;
+        color: black;
+        position: fixed;
+        top: 30px;
+        right: 0;
+        width: 100px;
+        box-shadow: -1px 4px 5px 1px;
+        z-index: 1;
+        transition-property: width;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.5s;
+    }
+
+    #navbarcontent.inactive ul {
+
+        transition-property: width;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.5s;
+        width: 0;
+        visibility: collapse;
+    }
+
+    #navbarcontent.process ul {
+        width: 0;
+    }
+
+    #navbarcontent ul li {
+        padding: 5px;
+    }
+
+    #navbarcontent ul li a {
+        color: black !important;
+    }
+
+    #mobile_nav {
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 30px;
+        background-color: white;
+    }
+
+    #slogan_box {
+        display: none;
+    }
+}
